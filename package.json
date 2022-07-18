@@ -1,0 +1,34 @@
+{
+  "name": "hw01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "nodemon index",
+    "list": "node index.js --action list",
+    "get": "node index.js --action get --id",
+    "remove": "node index.js --action remove --id",
+    "add": "node index.js --action add"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubtsov86/node-hw01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubtsov86/node-hw01/issues"
+  },
+  "homepage": "https://github.com/rubtsov86/node-hw01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "commander": "^9.4.0",
+    "nanoid": "^4.0.0"
+  }
+}
