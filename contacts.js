@@ -58,7 +58,11 @@ async function addContact(name, email, phone) {
     const newContact = { id: nanoid(), name, email, phone };
     const newContactList = [...parsedData, newContact];
 
-    await fs.writeFile(contactsPath, JSON.stringify(newContactList), "utf8");
+    await fs.writeFile(
+      contactsPath,
+      JSON.stringify(newContactList, null, 2),
+      "utf8"
+    );
     console.log(`${newContact.name} was added`);
     console.log("new contactslist");
     console.table(newContactList);
