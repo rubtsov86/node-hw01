@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid";
-import fileSystem from "fs";
+import fs from "fs/promises";
 import path from "path";
 
-const fs = fileSystem.promises;
+// const fs = fileSystem.promises;
 
 const contactsPath = path.resolve("./db/contacts.json");
 
